@@ -1,0 +1,39 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin", "prettier"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "root": true,
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "eqeqeq": 1,
+    "no-unused-vars": 0,
+    "no-console": 1,
+    "no-cond-assign": 2,
+    "comma-spacing": 2,
+    "eol-last": 2,
+    "key-spacing": 2,
+    "no-dupe-args": 2,
+    "no-unreachable": 2,
+    "no-var": 2,
+    "prefer-const": 2,
+    "no-debugger": 2,
+    "prettier/prettier": 2
+  }
+}
