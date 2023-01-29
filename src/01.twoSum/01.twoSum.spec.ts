@@ -6,7 +6,8 @@ const test = [
   { nums: [1, 2, 7, 5], target: 9, result: [1, 2] },
   { nums: [3, 3], target: 6, result: [0, 1] },
   { nums: [1, 2, 8, 5], target: 7, result: [1, 3] },
-  { nums: [1, 2, 8, 5], target: 11, result: [] }
+  { nums: [1, 2, 8, 5], target: 11, result: [] },
+  { nums: [1, 2, 8, 5], target: 13, result: [2, 3] }
 ]
 
 describe('两数之和', () => {
