@@ -43,6 +43,9 @@
     "*.{js,ts}": [
       "prettier --write",
       "eslint --fix"
+    ],
+    "*.spec.{js,ts}": [
+      "jest --coverage"
     ]
   },
   "jest": {
