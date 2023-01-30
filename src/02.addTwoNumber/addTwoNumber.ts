@@ -45,7 +45,7 @@ export function addTwoNumber(l1: ListNode, l2: ListNode): ListNode {
 }
 
 function add(l1: ListNode, l2: ListNode, carry = 0) {
-  if (l1 == null && l2 == null && carry == 0) return null
+  if (!l1 && !l2 && carry == 0) return null
   let num = carry
   num += (l1?.val || 0) + (l2?.val || 0)
   l1 = l1?.next || null
