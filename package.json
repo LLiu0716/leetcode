@@ -4,8 +4,8 @@
   "description": "leetcode 解题代码",
   "main": "",
   "scripts": {
-    "dev": "ts-node src/03.lengthOfLongestSubstring/index.ts",
-    "test:dev": "jest --coverage src/03.lengthOfLongestSubstring/lengthOfLongestSubstring.spec.ts",
+    "dev": "ts-node src/05.longestPalindrome/longestPalindrome.ts",
+    "test:dev": "jest --coverage src/04.findMedianSortedArrays/findMedianSortedArrays.spec.ts",
     "test": "jest --coverage",
     "lint": "eslint src --ext .js,.ts --cache --fix",
     "commit": "git cz"

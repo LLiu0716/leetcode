@@ -46,8 +46,8 @@ export function findMedianSortedArraysMap(
       let maxLeft = 0
       if (!i) {
         maxLeft = nums2[j - 1]
-      } else if (!j) {
-        maxLeft = nums1[i - 1]
+        // } else if (!j) {
+        //   maxLeft = nums1[i - 1]
       } else {
         maxLeft = Math.max(nums1[i - 1], nums2[j - 1])
       }
@@ -56,8 +56,8 @@ export function findMedianSortedArraysMap(
       let minRight = 0
       if (i == m) {
         minRight = nums2[j]
-      } else if (j == n) {
-        minRight = nums1[i]
+        // } else if (j == n) {
+        //   minRight = nums1[i]
       } else {
         minRight = Math.min(nums2[j], nums1[i])
       }
