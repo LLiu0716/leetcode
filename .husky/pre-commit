@@ -1,5 +1,5 @@
 #!/bin/sh
 
-npm run test
+# npm run test
 
 npx --no -- lint-staged

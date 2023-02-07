@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node src/05.longestPalindrome/longestPalindrome.ts",
     "test:dev": "jest --coverage src/04.findMedianSortedArrays/findMedianSortedArrays.spec.ts",
-    "test": "jest --coverage",
+    "test": "jest --coverage --findRelatedTests --bail",
     "lint": "eslint src --ext .js,.ts --cache --fix",
     "commit": "git cz"
   },
@@ -44,7 +44,7 @@
   },
   "lint-staged": {
     "*.spec.{js,ts}": [
-      "jest --coverage"
+      "jest --coverage --findRelatedTests --bail"
     ],
     "*.{js,ts}": [
       "prettier --write",
@@ -63,6 +63,15 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "coverageDirectory": "../coverage",
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 100,
+        "lines": 80,
+        "statements": 80
+      }
+    },
     "testEnvironment": "node"
   }
 }
