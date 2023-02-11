@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node src/05.longestPalindrome/longestPalindrome.ts",
     "test:dev": "jest --coverage src/06.convert/convert.spec.ts",
-    "test": "jest --coverage --findRelatedTests --bail",
+    "test": "jest --coverage",
     "lint": "eslint src --ext .js,.ts --cache --fix",
     "commit": "git cz"
   },
