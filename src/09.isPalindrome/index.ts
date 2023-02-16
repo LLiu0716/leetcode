@@ -1,8 +1,8 @@
 /**
- * @package 字符串转整数 (atoi)
+ * @package 回文数
  * @author liu <admin>
  */
-export const title = '字符串转整数(atoi)'
+export const title = '回文数'
 
 /**
  * 暴力解法
