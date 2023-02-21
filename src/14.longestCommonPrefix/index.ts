@@ -4,7 +4,7 @@
  */
 export const title = '最长公共前缀'
 
-function getValue(s: string, target: string) {
+function getValue(s: string, target: string): string {
   if (s === target) return target
   const len = Math.min(s.length, target.length)
   let i = 0
@@ -26,7 +26,7 @@ function getValue(s: string, target: string) {
 export function longestCommonPrefix(strs: string[]): string {
   let str: string = strs[0]
   for (let i = 0; i < strs.length; i++) {
-    str = getValue(strs[i], str) as string
+    str = getValue(strs[i], str)
   }
   return str
 }
