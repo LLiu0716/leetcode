@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "dev": "ts-node src/05.longestPalindrome/longestPalindrome.ts",
-    "test:dev": "jest --coverage --bail src/13.romanToInt/index.spec.ts",
+    "test:dev": "jest --coverage --bail src/17.letterCombinations/index.spec.ts",
     "test": "jest --coverage",
     "lint": "eslint src --ext .js,.ts --cache --fix",
     "commit": "git cz"
